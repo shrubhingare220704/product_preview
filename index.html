@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Page</title>
+</head>
+<style>
+    .container{
+        background-color: #d9b3ff;
+        border: 1.5px solid #9900cc;
+        height: 450px;
+        width: 65%;
+        border-radius: 30px;
+        display: flex;
+        margin: 30px auto;
+        box-shadow: 1px 1px 10px 10px #8c8c8c;
+    }
+
+    .text-center{
+        text-align: center;
+        margin-top: 40px;
+        margin-left:-140px;
+    }
+
+    #product-img{
+        height: 300px;
+        width: 170px;
+        margin: 30px;
+    }
+
+    .product-container{
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 30px auto;
+    }
+
+    .product-div{
+        width: 50%;
+    }
+
+    .product-description-div{
+        width: 50%;
+    }
+
+    .prod-img{
+        height: 80px;
+        border: 1px solid black;
+        border-radius: 20px;
+        box-shadow: 0.5px 0.5px 20px 0.5px grey;
+        cursor: pointer;
+    }
+
+    .prod-img:hover{
+        height: 90px;
+        box-shadow: 2px 2px 20px 3px #808080;
+        transition: 0.5s;
+    }
+
+    h2{
+        color:  #4d0099;
+    }
+
+    .description{
+        display: block;
+        justify-content: center;
+    }
+
+    /* .text-container{
+    display: block;
+    margin: auto;
+    height: 200px;
+    width: 600px;
+    } */
+
+    .text{
+    font-size: 15px;
+    margin-left: -40px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    }
+
+
+    h4{
+        margin-left: -45px;
+    }
+
+    .paragraph{
+        margin: 15px;
+        width: 350px;
+    }
+
+    p{
+        margin-left: 45px;
+    }
+    
+
+    .buy-now{
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn{
+        margin-top: 20px;
+        padding: 10px 90px;
+        background-color: #4d0099;
+        color: white;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <div class="product-div">
+            <img src="./img/bhagvat-geeta.jpeg" id="product-img" alt="bhagvat geeta">
+        </div>
+
+        <div class="product-description-div">
+            <p class="description">
+                <h2 class="text-center">Book Store</h2>
+            </p><br>
+
+                    <p class="text">
+                        <span class="main-heading">📚The Bookshelf</span> is a library and bookstore that brings the love of reading to the young generation.<br /><br />
+    
+                        We carry a carefully curated collection of books, including children's books, activity books, and self-improvement books in English, Hindi, and Marathi.<br /><br />
+    
+                        If you need me, you'll find me among the shelves of this magical bookstore. ✨📖
+                    </p>
+               
+        
+
+            <p class="paragraph">
+                <h4>Price :</h4>
+                <p >
+                    <del>₹ 500/-</del>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>₹ 390/-</span>
+                </p>
+            </p>
+
+            <div class="buy-now">
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-container">
+        <img src="./img/1.jpeg" class="prod-img" onclick="changeProdImg('./img/1.jpeg')">
+        <img src="./img/2.jpeg" class="prod-img" onclick="changeProdImg('./img/2.jpeg')">
+        <img src="./img/3.jpeg" class="prod-img" onclick="changeProdImg('./img/3.jpeg')">
+        <img src="./img/6.jpeg" class="prod-img" onclick="changeProdImg('./img/6.jpeg')">
+        <img src="./img/4.jpeg" class="prod-img" onclick="changeProdImg('./img/4.jpeg')">
+        <img src="./img/5.jpeg" class="prod-img" onclick="changeProdImg('./img/5.jpeg')">
+    </div>
+
+    
+    <script>
+        function changeProdImg(imgName) {
+            const mainImg = document.getElementById('product-img');
+            mainImg.src = imgName;
+        }
+    </script>
+</body>
+</html>
