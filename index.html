@@ -8,8 +8,8 @@
 </head>
 <style>
     .container{
-        background-color: #d9b3ff;
-        border: 1.5px solid #9900cc;
+        background-color: #00001a;
+        border: 2px solid white;
         height: 450px;
         width: 65%;
         border-radius: 30px;
@@ -31,7 +31,7 @@
     }
 
     .product-container{
-        width: 50%;
+        width: 60%;
         display: flex;
         justify-content: space-evenly;
         margin: 30px auto;
@@ -46,21 +46,23 @@
     }
 
     .prod-img{
-        height: 80px;
-        border: 1px solid black;
+        height: 120px;
+        width: 80px;
+        border: 1px solid white;
         border-radius: 20px;
         box-shadow: 0.5px 0.5px 20px 0.5px grey;
         cursor: pointer;
+
     }
 
     .prod-img:hover{
-        height: 90px;
+        height: 130px;
         box-shadow: 2px 2px 20px 3px #808080;
         transition: 0.5s;
     }
 
     h2{
-        color:  #4d0099;
+        color:  white;
     }
 
     .description{
@@ -68,48 +70,48 @@
         justify-content: center;
     }
 
-    /* .text-container{
-    display: block;
-    margin: auto;
-    height: 200px;
-    width: 600px;
-    } */
-
     .text{
     font-size: 15px;
     margin-left: -40px;
     margin-bottom: 20px;
     margin-top: -20px;
+    color: white;
     }
-
 
     h4{
         margin-left: -45px;
+        color: white;
     }
 
     .paragraph{
         margin: 15px;
         width: 350px;
+        
     }
 
     p{
         margin-left: 45px;
+        color: white;
     }
     
 
     .buy-now{
-        display: flex;
+         display: flex; 
         justify-content: center;
     }
 
     .btn{
         margin-top: 20px;
-        padding: 10px 90px;
-        background-color: #4d0099;
-        color: white;
+        background-color: white;
+        width: 110px;
+        height: 30px;
+        margin-right: 120px;
+        color:#00001a;
         border-radius: 30px;
         border: none;
         cursor: pointer;
+        
+        
     }
     
 </style>
@@ -135,12 +137,9 @@
         
 
             <p class="paragraph">
-                <h4>Price :</h4>
-                <p >
-                    <del>₹ 500/-</del>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <span>₹ 390/-</span>
-                </p>
+                <h4>Price : &nbsp;&nbsp;<del>₹ 500/-</del>
+                            &nbsp;&nbsp;
+                    <span>₹ 390/-</span></h4>
             </p>
 
             <div class="buy-now">
