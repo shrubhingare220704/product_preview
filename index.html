@@ -7,41 +7,43 @@
     <title>Product Review Page</title>
 </head>
 <style>
-    .container{
-        background-color: #00001a;
-        border: 2px solid white;
-        height: 450px;
-        width: 65%;
-        border-radius: 30px;
-        display: flex;
+     .container{
+        background-color:whitesmoke;
+        height: 300;
+        width: 150px;
+        padding: 20px ;
+        border-radius: 10px;
+        display: block;
+        
+        border: 2px black solid;
         margin: 30px auto;
-        box-shadow: 1px 1px 10px 10px #8c8c8c;
-    }
-
-    .text-center{
-        text-align: center;
-        margin-top: 40px;
-        margin-left:-140px;
-    }
+           
+            
+    } 
 
     #product-img{
-        height: 300px;
-        width: 170px;
-        margin: 30px;
+         
+        height: 250px;
+        object-fit: cover;
+        width: 150px;
+        display: block;
+        margin: 10px auto;
+        border-radius: 10px;
+        justify-content: center;
+        margin: 30px auto;
+        border: 2px solid black;
+        margin-top: -10px;
     }
 
     .product-container{
-        width: 60%;
+        width: 90%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         margin: 30px auto;
     }
 
     .product-div{
-        width: 50%;
-    }
-
-    .product-description-div{
         width: 50%;
     }
 
@@ -52,6 +54,7 @@
         border-radius: 20px;
         box-shadow: 0.5px 0.5px 20px 0.5px grey;
         cursor: pointer;
+        object-fit: cover ; 
 
     }
 
@@ -61,108 +64,79 @@
         transition: 0.5s;
     }
 
-    h2{
-        color:  white;
-    }
-
-    .description{
-        display: block;
-        justify-content: center;
-    }
-
-    .text{
-    font-size: 15px;
-    margin-left: -40px;
-    margin-bottom: 20px;
-    margin-top: -20px;
-    color: white;
-    }
-
-    h4{
-        margin-left: -45px;
-        color: white;
-    }
-
-    .paragraph{
-        margin: 15px;
-        width: 350px;
-        
-    }
-
-    p{
-        margin-left: 45px;
-        color: white;
-    }
-    
-
-    .buy-now{
-         display: flex; 
-        justify-content: center;
-    }
-
     .btn{
         margin-top: 20px;
-        background-color: white;
+        background-color: #00001a;
         width: 110px;
         height: 30px;
-        margin-right: 120px;
-        color:#00001a;
+        margin: 20px ;
+        display: block;
+        justify-content: center;
+        color:white;
         border-radius: 30px;
         border: none;
         cursor: pointer;
-        
-        
+        padding: 5px 20px;
+        margin-top: -10px; 
+            
+    }
+    .btn:hover{
+       background-color: white;
+       color: #00001a;
+       border: 2px solid black;
+       border-radius: 20px;
+      
     }
     
+    /* .text{
+            
+            font-weight: bold;
+            margin: 20px ;
+            margin-top: -20px;
+        } */
+
+        .text1{
+            /* text-align: center; */
+            font-weight: bold;
+            margin: 30px ;
+            margin-top: -20px;
+        }
+    
+   
 </style>
 <body>
-    <div class="container">
+     <div class="container"> 
         <div class="product-div">
             <img src="./img/bhagvat-geeta.jpeg" id="product-img" alt="bhagvat geeta">
         </div>
+        <!-- <p class="text">Bhagavad Gita</p><br><BR> -->
+            <p class="text1">Price : 350/-</p> 
+            <button class="btn"><b>Buy Now</b></button>
 
-        <div class="product-description-div">
-            <p class="description">
-                <h2 class="text-center">Book Store</h2>
-            </p><br>
+    </div> 
 
-                    <p class="text">
-                        <span class="main-heading">📚The Bookshelf</span> is a library and bookstore that brings the love of reading to the young generation.<br /><br />
-    
-                        We carry a carefully curated collection of books, including children's books, activity books, and self-improvement books in English, Hindi, and Marathi.<br /><br />
-    
-                        If you need me, you'll find me among the shelves of this magical bookstore. ✨📖
-                    </p>
-               
+    <div class="product-container">   
         
-
-            <p class="paragraph">
-                <h4>Price : &nbsp;&nbsp;<del>₹ 500/-</del>
-                            &nbsp;&nbsp;
-                    <span>₹ 390/-</span></h4>
-            </p>
-
-            <div class="buy-now">
-                <button class="btn">Buy Now</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="product-container">
         <img src="./img/1.jpeg" class="prod-img" onclick="changeProdImg('./img/1.jpeg')">
+       
         <img src="./img/2.jpeg" class="prod-img" onclick="changeProdImg('./img/2.jpeg')">
         <img src="./img/3.jpeg" class="prod-img" onclick="changeProdImg('./img/3.jpeg')">
         <img src="./img/6.jpeg" class="prod-img" onclick="changeProdImg('./img/6.jpeg')">
         <img src="./img/4.jpeg" class="prod-img" onclick="changeProdImg('./img/4.jpeg')">
-        <img src="./img/5.jpeg" class="prod-img" onclick="changeProdImg('./img/5.jpeg')">
+        <img src="./img/5.jpeg" class="prod-img" onclick="changeProdImg('./img/5.jpeg')"><br><br>
+        <img src="./img/7.jpeg" class="prod-img" onclick="changeProdImg('./img/7.jpeg')">
+        <img src="./img/8.jpeg" class="prod-img" onclick="changeProdImg('./img/8.jpeg')">
+        <img src="./img/9.jpeg" class="prod-img" onclick="changeProdImg('./img/9.jpeg')">
     </div>
 
+     
     
     <script>
-        function changeProdImg(imgName) {
+        function changeProdImg (imgName) {
             const mainImg = document.getElementById('product-img');
             mainImg.src = imgName;
         }
+       
     </script>
 </body>
 </html>
